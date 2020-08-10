@@ -18,4 +18,4 @@ for r, d, f in os.walk(path):
 with open('locations.csv', 'w', newline='') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=' ',
                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
-    spamwriter.writerow([str(count), file, points[count])
+    spamwriter.writerow([str(count), file, points[count]])
